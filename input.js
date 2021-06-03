@@ -15,7 +15,6 @@ const setupInput = function (conn) {
 };
 
 const handleUserInput = function (key) {
-  console.log(key);
   if (key === '\u0003') process.exit();
   if (key === 'w') connection.write('Move: up');
   if (key === 'a') connection.write('Move: left');
